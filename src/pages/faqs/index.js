@@ -133,7 +133,7 @@ const PriorExp = () => {
 const ClassTime = () => {
     return (
         <FAQ 
-            question="What is a BJJ class like and how long does it last?" 
+            question="What is a BJJ class like?" 
             answer="Kids classes last for 1 hour. For Teens and Adults, the fundamentals last 40 minutes and intermediate for an hour. Classes includes Warm-ups and conditioning exercises, Drills, Techniques of the day, Wrestling or Roll etc."
         />
     )
@@ -182,8 +182,8 @@ const Rank = () => {
 }
 
 const Row = styled.div`width: 100%; overflow: hidden;`;
-const Left = styled.div`width: 600px; float: left;`;
-const Right = styled.div`margin-left: 620px;`;
+const Left = styled.div`width: 50%; float: left;`;
+const Right = styled.div`width: 50%; float: right;`;
 
 const FAQPage = () => {
     return (
