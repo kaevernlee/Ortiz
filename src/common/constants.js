@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 export const Header = styled.header`
   border-top: #F70606 3px solid;
-  //padding: 0 30px;
 `;
 
 export const HeaderLeftAlignedWrapper = styled.div`
@@ -11,6 +10,12 @@ export const HeaderLeftAlignedWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   margin-left: 30px;
+  
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+    margin: 0 20px;
+    text-align: center
+  }
 `;
 
 export const HeaderImage = styled.img`
@@ -22,6 +27,9 @@ export const HeaderText = styled.div`
   flex-direction: column;
   align-items: flex-start;
   margin-left: 5px;
+  @media only screen and (max-width: 700px) {
+    align-items: center;
+  }
 `;
 
 export const HeaderRightAlignedWrapper = styled.div`
@@ -30,14 +38,24 @@ export const HeaderRightAlignedWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  @media only screen and (max-width: 700px) {
+    align-items: center;
+  }
 `;
 
 export const HeaderTitle = styled.a`
-  font-family: Oswald;
+  font-family: Oswald,sans-serif
+;
   font-size: 35px;
+  @media only screen and (max-width: 700px) {
+    text-align: center;
+  }
 `;
 
 export const HeaderSubTitle = styled.div`
+    @media only screen and (max-width: 700px) {
+      text-align: center;
+    }
 `;
 
 export const SocialLogo = styled.img`
@@ -58,6 +76,9 @@ export const MainSlogan = styled.div`
     font-size: 50px;
     font-style: italic;
     color: rgba(50, 81, 146, 0.39);
+  @media only screen and (max-width: 700px) {
+    display: none;
+  }
 `;
 
 export const TopHeaderWrapper = styled.div`
@@ -67,6 +88,9 @@ export const TopHeaderWrapper = styled.div`
   align-items: stretch;
     flex: 0 0 100%;
     justify-content: space-between;
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
 
 export const CustomNavLink = styled(NavLink)`
@@ -119,13 +143,13 @@ export const TileWrapper = styled.div`
     background: #fff;
     border-bottom: rgba(0, 0, 0, .13) 1px solid;
     box-shadow: 0 0 5px rgb(0 0 0 / 10%);
-    margin: 10px;
+    //margin: 50px;
 `;
 
 export const Tile = styled.div`
     display: block; 
     text-align: center;
-    width: fit-content;
+    max-width: 1000px;
     margin: auto;
 `;
 

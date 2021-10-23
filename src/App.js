@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import styled from 'styled-components';
 import Header from './common/header';
@@ -22,7 +21,10 @@ const Wrapper = styled.div`
 
 const Body = styled.body`
   background-color: #ccc;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
+  @media only screen and (max-width: 700px) {
+    position: relative;
+  }
 `;
 
 const PageWrapper = styled.div`
@@ -34,7 +36,7 @@ function App() {
     return (
         <BrowserRouter>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+            <link rel="preconnect" href="https://fonts.gstatic.com"/>
             <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap"
                   rel="stylesheet"/>
             <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
@@ -68,7 +70,7 @@ function App() {
             </Body>
         </BrowserRouter>
     );
-};
+}
 
 
 export default App;
