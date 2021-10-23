@@ -8,8 +8,8 @@ const TileWrapper = constants.TileWrapper
 const Tile = constants.Tile
 const Card = constants.Card
 
-const onClick = () => {
-    var x = document.getElementById("myDIV");
+const toggle = ({pid}) => {
+    var x = document.getElementById({pid});
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
@@ -17,12 +17,12 @@ const onClick = () => {
     }
 }
 
-const FAQ = ({question, answer}) => {
+const FAQ = ({question, answer, pid}) => {
     return (
         <TileWrapper>
-            <Tile onClick={onClick}>
+            <Tile onClick={({pid})}>
                 <SubTitle>{question}</SubTitle>
-                <p>
+                <p id={pid}>
                     {answer}
                 </p>
             </Tile>
@@ -35,7 +35,8 @@ const HaveBegClasses = () => {
     return (
         <FAQ 
             question="Do you have beginner's classes?" 
-            answer="Yes, we have fundamental classes covering the basics of BJJ. The Thai Boxing and MMA classes are open to all and students will be grouped based on their skill level." 
+            answer="Yes, we have fundamental classes covering the basics of BJJ. The Thai Boxing and MMA classes are open to all and students will be grouped based on their skill level."
+            pid='1'
         />
     )
 }
@@ -79,7 +80,7 @@ const Discounts = () => {
 const FreeClass = () => {
     return (
         <TileWrapper>
-            <Tile onClick={onClick}>
+            <Tile onClick={toggle}>
                 <SubTitle>Can I try the classes before deciding to sign up?</SubTitle>
                 <p>
                     Yes, indeed. We offer a FREE trial to any legitimate new students to come along and try before you enroll. This gives you the opportunity to see our facilities and meet the instructors and students. See <a href={links.freeClasses}>Free Classes</a> for more information.
@@ -92,7 +93,7 @@ const FreeClass = () => {
 const Attire = () => {
     return (
         <TileWrapper>
-            <Tile onClick={onClick}>
+            <Tile onClick={toggle}>
                 <SubTitle>What should I wear for my first class?</SubTitle>
                 <p>
                     If you have any other Gi (uniform) from another martial art school you can use that for the free trial classes. Otherwise wear T-shirt and shorts or exercise pants, something you don’t mind getting ripped or stretched. Avoid using clothes with pockets and zippers. Also bring a towel and a bottle of water. See <a href={links.freeClasses}>Free Classes</a> for more information.
@@ -105,7 +106,7 @@ const Attire = () => {
 const FirstTimeAttire = () => {
     return (
         <TileWrapper>
-            <Tile onClick={onClick}>
+            <Tile onClick={toggle}>
                 <SubTitle>Who/what should I bring for my first FREE trial?</SubTitle>
                 <p>
                     For FREE trial enrollment please bring a photo ID like driver’s license or Student ID if you are under 18 you must be accompanied by your parent/guardian. Please arrive 20 minutes prior to the class to fill up the form. See <a href={links.freeClasses}>Free Classes</a> for more information.
@@ -118,7 +119,7 @@ const FirstTimeAttire = () => {
 const PriorExp = () => {
     return (
         <TileWrapper>
-            <Tile onClick={onClick}>
+            <Tile onClick={toggle}>
                 <SubTitle>I have no prior Martial Arts experience. Is that ok?</SubTitle>
                 <p>
                     No experience is necessary. Just walk in, register and prepare to have a good time. See for yourself how much fun and exciting it can be. See <a href={links.freeClasses}>Free Classes</a> for more information.
@@ -158,7 +159,7 @@ const BjjKids = () => {
 const AgeRestrictions = () => {
     return (
         <TileWrapper>
-            <Tile onClick={onClick}>
+            <Tile onClick={toggle}>
                 <SubTitle>Are there any age restrictions?</SubTitle>
                 <p> 
                     Yes. Check your age group – Kids (5 – 9), Teens (10 – 15) & Adults (16 +). Look at the <a href={links.timeTable}>Time Table</a> to see what classes are available for your age group. It is possible for a kid younger than 5 to enroll based on maturity, this can be confirmed in our <a href={links.freeClasses}>Free Trial</a> class. For MMA you must be 13 years or older.
