@@ -175,7 +175,7 @@ const AgeRestrictions = () => {
 const Rank = () => {
     return (
         <FAQ 
-            question="Can I transfer my current rank from another academy?" 
+            question="Can I transfer my rank from another academy?" 
             answer="If you already hold a belt from another school you can continue with the same grade. We’ll need to confirm that your knowledge of techniques and sparring experience matches our standards before we grade you to the next level. If your belt or rank was awarded by a non-regulated federation, you will be given a new rank/belt based on your skill level and as officially prescribed by the International Federation."
         />
     )
