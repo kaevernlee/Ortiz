@@ -112,13 +112,13 @@ export const TileWrapper = styled.div`
     background: #fff;
     border-bottom: rgba(0, 0, 0, .13) 1px solid;
     box-shadow: 0 0 5px rgb(0 0 0 / 10%);
-    margin: 30px;
+    margin: 10px;
 `;
 
 export const Tile = styled.div`
     display: block; 
     text-align: center;
-    width: 1000px;
+    width: fit-content;
     margin: auto;
 `;
 

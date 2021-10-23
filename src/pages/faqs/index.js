@@ -74,7 +74,7 @@ const FreeClass = () => {
     const [show, toggleShow] = React.useState(false);
 
     return (
-        <TileWrapper>
+        <TileWrapper onClick={() => toggleShow(!show)}>
             <Tile>
                 <SubTitle>Can I try the classes before deciding to sign up?</SubTitle>
                 {show && <p>
@@ -89,7 +89,7 @@ const Attire = () => {
     const [show, toggleShow] = React.useState(false);
     
     return (
-        <TileWrapper>
+        <TileWrapper onClick={() => toggleShow(!show)}>
             <Tile>
                 <SubTitle>What should I wear for my first class?</SubTitle>
                 {show && <p>
@@ -104,7 +104,7 @@ const FirstTimeAttire = () => {
     const [show, toggleShow] = React.useState(false);
 
     return (
-        <TileWrapper>
+        <TileWrapper onClick={() => toggleShow(!show)}>
             <Tile>
                 <SubTitle>Who/what should I bring for my first FREE trial?</SubTitle>
                 {show && <p>
@@ -119,9 +119,9 @@ const PriorExp = () => {
     const [show, toggleShow] = React.useState(false);
     
     return (
-        <TileWrapper>
+        <TileWrapper onClick={() => toggleShow(!show)}>
             <Tile>
-                <SubTitle>I have no prior Martial Arts experience. Is that ok?</SubTitle>
+                <SubTitle>I have no prior Martial Arts experience.</SubTitle>
                 {show && <p>
                     No experience is necessary. Just walk in, register and prepare to have a good time. See for yourself how much fun and exciting it can be. See <a href={links.freeClasses}>Free Classes</a> for more information.
                 </p>}
@@ -142,7 +142,7 @@ const ClassTime = () => {
 const BjjDifference = () => {
     return (
         <FAQ 
-            question="Is Brazilian Jiu Jitsu different from other traditional martial arts?" 
+            question="Brazilian Jiu Jitsu vs. Other martial arts?" 
             answer="BJJ is the only self defense system that effectively addresses ground grappling, the most important and neglected aspect of any real fight. Martial Arts like Tae kwon do, Kung fu, Karate and hapkido miss out on this aspect of a real fight. 95% of fights end up in a clinch and go to the ground. And when it does, it is more likely that one will be at the mercy of the BJJ fighter. Remember in a street fight it is very difficult to use fancy kicks, deadly punches or pressure points etc… When you’re looking for a martial art, beware of those that teach only one aspect of a fight giving you a false sense of security. If you’re not learning to defend yourself on the ground, then you are not fully prepared."
         />
     )
@@ -161,7 +161,7 @@ const AgeRestrictions = () => {
     const [show, toggleShow] = React.useState(false);
 
     return (
-        <TileWrapper>
+        <TileWrapper onClick={() => toggleShow(!show)}>
             <Tile>
                 <SubTitle>Are there any age restrictions?</SubTitle>
                 {show && <p> 
@@ -181,25 +181,49 @@ const Rank = () => {
     )
 }
 
+const Row = styled.div`width: 100%; overflow: hidden;`;
+const Left = styled.div`width: 600px; float: left;`;
+const Right = styled.div`margin-left: 620px;`;
+
 const FAQPage = () => {
     return (
         <div>
             <MainTitle>Frequently Asked Questions</MainTitle>
-            <HaveBegClasses />
-            <IsGoodAcademy />
-            <FirstExpectations />
-            <Pricing />
-            <Discounts />
-            <FreeClass />
-            <Attire />
-            <FirstTimeAttire />
-            <PriorExp />
-            <ClassTime />
-            <BjjDifference />
-            <BjjKids />
-            <AgeRestrictions />
-            <Rank />
             
+            <Row>
+                <Left><HaveBegClasses /></Left>
+                <Right><IsGoodAcademy /></Right>
+            </Row>
+
+            <Row>
+                <Left><FirstExpectations /></Left>
+                <Right><Pricing /></Right>
+            </Row>
+
+            <Row>
+                <Left><Discounts /></Left>
+                <Right><FreeClass /></Right>
+            </Row>
+
+            <Row>
+                <Left><Attire /></Left>
+                <Right><FirstTimeAttire /></Right>
+            </Row>
+
+            <Row>
+                <Left><PriorExp /></Left>
+                <Right><ClassTime /></Right>
+            </Row>
+            
+            <Row>
+                <Left> <BjjDifference /></Left>
+                <Right><BjjKids /></Right>
+            </Row>
+
+            <Row>
+                <Left> <AgeRestrictions /></Left>
+                <Right><Rank /></Right>
+            </Row>
         </div>
     )
 };
