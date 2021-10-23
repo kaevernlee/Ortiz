@@ -85,7 +85,7 @@ const NavBar = () => {
                HOME
            </CustomNavLink>
            <CustomNavLink exact activeClassName="active" to={links.freeClasses}>
-               FREE MARTIAL ART TRIAL CLASSES
+               FREE MARTIAL ARTS TRIAL CLASSES
            </CustomNavLink>
            <CustomNavLink exact activeClassName="active" to={links.testimonials}>
                TESTIMONIALS

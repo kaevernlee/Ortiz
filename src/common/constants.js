@@ -140,3 +140,4 @@ export const Timetable = styled.img`
     width: 100%;
     height: auto;
 `;
+
