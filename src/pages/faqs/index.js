@@ -2,29 +2,22 @@ import styled from 'styled-components';
 import {MainTitle, RegularText, SubTitle} from "../../common/commonText";
 import * as constants from "../../common/constants";
 import links from '../../utils/links';
+import React from 'react'
 
 
 const TileWrapper = constants.TileWrapper
 const Tile = constants.Tile
 const Card = constants.Card
 
-const toggle = ({pid}) => {
-    var x = document.getElementById({pid});
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
 
-const FAQ = ({question, answer, pid}) => {
+const FAQ = ({question, answer}) => {
+  const [show, toggleShow] = React.useState(false);
+
     return (
-        <TileWrapper>
-            <Tile onClick={({pid})}>
+        <TileWrapper onClick={() => toggleShow(!show)}>
+            <Tile>
                 <SubTitle>{question}</SubTitle>
-                <p id={pid}>
-                    {answer}
-                </p>
+                {show && <p>{answer}</p>}
             </Tile>
         </TileWrapper>
     )
@@ -78,52 +71,60 @@ const Discounts = () => {
 }
 
 const FreeClass = () => {
+    const [show, toggleShow] = React.useState(false);
+
     return (
         <TileWrapper>
-            <Tile onClick={toggle}>
+            <Tile>
                 <SubTitle>Can I try the classes before deciding to sign up?</SubTitle>
-                <p>
+                {show && <p>
                     Yes, indeed. We offer a FREE trial to any legitimate new students to come along and try before you enroll. This gives you the opportunity to see our facilities and meet the instructors and students. See <a href={links.freeClasses}>Free Classes</a> for more information.
-                </p>
+                </p>}
             </Tile>
         </TileWrapper>
     )
 }
 
 const Attire = () => {
+    const [show, toggleShow] = React.useState(false);
+    
     return (
         <TileWrapper>
-            <Tile onClick={toggle}>
+            <Tile>
                 <SubTitle>What should I wear for my first class?</SubTitle>
-                <p>
+                {show && <p>
                     If you have any other Gi (uniform) from another martial art school you can use that for the free trial classes. Otherwise wear T-shirt and shorts or exercise pants, something you don’t mind getting ripped or stretched. Avoid using clothes with pockets and zippers. Also bring a towel and a bottle of water. See <a href={links.freeClasses}>Free Classes</a> for more information.
-                </p>
+                </p>}
             </Tile>
         </TileWrapper>
     )
 }
 
 const FirstTimeAttire = () => {
+    const [show, toggleShow] = React.useState(false);
+
     return (
         <TileWrapper>
-            <Tile onClick={toggle}>
+            <Tile>
                 <SubTitle>Who/what should I bring for my first FREE trial?</SubTitle>
-                <p>
+                {show && <p>
                     For FREE trial enrollment please bring a photo ID like driver’s license or Student ID if you are under 18 you must be accompanied by your parent/guardian. Please arrive 20 minutes prior to the class to fill up the form. See <a href={links.freeClasses}>Free Classes</a> for more information.
-                </p>
+                </p>}
             </Tile>
         </TileWrapper>
     )
 }
 
 const PriorExp = () => {
+    const [show, toggleShow] = React.useState(false);
+    
     return (
         <TileWrapper>
-            <Tile onClick={toggle}>
+            <Tile>
                 <SubTitle>I have no prior Martial Arts experience. Is that ok?</SubTitle>
-                <p>
+                {show && <p>
                     No experience is necessary. Just walk in, register and prepare to have a good time. See for yourself how much fun and exciting it can be. See <a href={links.freeClasses}>Free Classes</a> for more information.
-                </p>
+                </p>}
             </Tile>
         </TileWrapper>
     )
@@ -157,13 +158,15 @@ const BjjKids = () => {
 }
 
 const AgeRestrictions = () => {
+    const [show, toggleShow] = React.useState(false);
+
     return (
         <TileWrapper>
-            <Tile onClick={toggle}>
+            <Tile>
                 <SubTitle>Are there any age restrictions?</SubTitle>
-                <p> 
+                {show && <p> 
                     Yes. Check your age group – Kids (5 – 9), Teens (10 – 15) & Adults (16 +). Look at the <a href={links.timeTable}>Time Table</a> to see what classes are available for your age group. It is possible for a kid younger than 5 to enroll based on maturity, this can be confirmed in our <a href={links.freeClasses}>Free Trial</a> class. For MMA you must be 13 years or older.
-                </p>
+                </p>}
             </Tile>
         </TileWrapper>
     )
