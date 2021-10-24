@@ -13,6 +13,9 @@ const FooterInnerWrapper = styled.div`
   margin: 0 30px;
   display: flex;
   flex-direction: row;
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
 
 const Title = styled.h2`
@@ -22,7 +25,6 @@ const Title = styled.h2`
 const Subtext = styled.p`
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
-  line-height: 10px;
 `;
 
 const TextGroup = styled.div`
@@ -31,6 +33,9 @@ const TextGroup = styled.div`
 
 const FooterGroup = styled.div`
     width:30%;
+  @media only screen and (max-width: 700px) {
+    width: 50%;
+  }
 `;
 
 const FooterBottom = styled.div`
