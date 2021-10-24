@@ -1,10 +1,8 @@
 import styled from 'styled-components';
-import {MainTitle, RegularText, SubTitle} from "../../common/commonText";
+import {MainTitle, RegularText} from "../../common/commonText";
 import * as constants from "../../common/constants";
-import links from '../../utils/links';
 
 const TileWrapper = constants.TileWrapper
-const Tile = constants.Tile
 const Testimonial = styled.div`
     display: block; 
     text-align: left;
@@ -16,11 +14,9 @@ const Entry = ({name, testimonial}) => {
     return (
         <TileWrapper>
             <Testimonial>
-                <blockquote>
-                    <p>
+                    <RegularText>
                         {testimonial}
-                    </p>
-                </blockquote>
+                    </RegularText>
                 <strong>{name}</strong>
             </Testimonial>
         </TileWrapper>
