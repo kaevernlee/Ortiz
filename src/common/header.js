@@ -86,9 +86,6 @@ const NavWrapper = styled.div`
 const MobileNavWrapper = styled.div`
   @media only screen and (max-width: 700px) {
     width: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -100,10 +97,17 @@ const MenuWrapper = styled.div`
   width: 100%;
   background-color: #222;
   box-shadow: 0 0 6px #000;
+  position: absolute;
+  top: 0;
+  padding-top: 70px;
 `;
 
 const HamburgerWrapper = styled.div`
   margin: 20px 20px 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
 `;
 
 const MenuItem = styled.a`

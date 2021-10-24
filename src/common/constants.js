@@ -40,6 +40,7 @@ export const HeaderRightAlignedWrapper = styled.div`
   align-items: flex-end;
   @media only screen and (max-width: 700px) {
     align-items: center;
+    margin-right: 0;
   }
 `;
 
