@@ -1,7 +1,20 @@
 import {MainTitle, RegularText, SubTitle} from "../../common/commonText";
-import * as constants from "../../common/constants"; 
+import * as constants from "../../common/constants";
+import styled from "styled-components";
 
 import photo_mma from "../../assets/home-assets/mma-class.jpg"
+import adults_class from "../../assets/home-assets/bjj-adults-class.jpg"
+import kids_class from "../../assets/home-assets/bjj-kids.jpg"
+import adults_exercise from "../../assets/home-assets/bjj-adults-exercises.jpg"
+import champion_photo from "../../assets/home-assets/champions-martial-arts.jpg"
+import thai_boxing from "../../assets/home-assets/thaiboxing-class.jpg"
+
+import bjj_showcase from "../../assets/home-assets/bjj-showcase.jpg"
+import thai_boxing_showcase from "../../assets/home-assets/thai-boxing-showcase.jpg"
+import mma_showcase from "../../assets/home-assets/mma-showcase.jpg"
+import links from "../../utils/links";
+
+
 
 const PhotosWrapper = constants.PhotosWrapper
 const Photo = constants.Photo
@@ -9,19 +22,28 @@ const ArticleWrapper = constants.ArticleWrapper
 const TileWrapper = constants.TileWrapper
 const Tile = constants.Tile
 const Quote = constants.Quote
+const MainSlogan = constants.MainSlogan
 
-const PhotoObject = ({img, em=0}) => {
+const PhotoObject = ({img}) => {
     return (
             <PhotosWrapper>
-                <Photo src={img} margin-top={em}/>
+                <Photo src={img} />
             </PhotosWrapper>
+    )
+}
+
+const Welcome = () => {
+    return (
+        <ArticleWrapper>
+            <MainSlogan>The Best Place To Learn Martial Arts</MainSlogan>
+         </ArticleWrapper>
     )
 }
 
 const Introduction = () => {
     return (
         <ArticleWrapper>
-            <SubTitle>Introduction to Ortiz Martial Arts Academy</SubTitle>
+            <MainTitle>Introduction to Ortiz Martial Arts Academy</MainTitle>
             <RegularText>
                 With state of the art modern facilities and highly skilled instructors, Ortiz Martial 
                 Arts Academy is the best place to learn the techniques required to become a skilful fighter – 
@@ -40,7 +62,7 @@ const Introduction = () => {
 const QuoteOne = () => {
     return (
         <ArticleWrapper>
-            <SubTitle>Begin Your Martial Arts Journey</SubTitle>
+            <MainTitle>Begin Your Martial Arts Journey</MainTitle>
             <RegularText>At Ortiz Academy learning martial arts is an exciting & fun journey</RegularText>
             <RegularText>Get Fit, Learn Self-defense and improve your State of Mind.</RegularText>
          </ArticleWrapper>
@@ -50,7 +72,7 @@ const QuoteOne = () => {
 const FriendlyEnv = () => {
     return (
         <ArticleWrapper>
-            <SubTitle>Friendly Environment</SubTitle>
+            <MainTitle>Friendly Environment</MainTitle>
             <RegularText>
                 We care about our students. We help them master effective techniques while imparting 
                 confidence, discipline & respect.
@@ -69,7 +91,7 @@ const FriendlyEnv = () => {
 const History = () => {
     return (
         <ArticleWrapper>
-            <SubTitle>The History of MMA, Brazilian Jiu Jitsu or Muay Thai</SubTitle>
+            <MainTitle>The History of MMA, Brazilian Jiu Jitsu and Muay Thai</MainTitle>
             <RegularText>
                 Martial arts techniques may date back to ancient times, but 
                 they are still just as relevant in the modern world. The training 
@@ -90,7 +112,7 @@ const History = () => {
 const StartJourney = () => {
     return (
         <ArticleWrapper>
-            <SubTitle>Start Your Journey With The Ortiz</SubTitle>
+            <MainTitle>Start Your Journey With The Ortiz Family</MainTitle>
             <RegularText>
                 If you are searching for an academy that offers martial arts 
                 classes for kids, you’ll be pleased to know that we offer specialised 
@@ -103,60 +125,90 @@ const StartJourney = () => {
     )
 }
 
+
+const Row = styled.div`
+    width: 100%;
+    float: left;
+    text-align: center;
+    @media only screen and (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+    }
+`;
+
+const Cell = styled.div`
+    width: 33%; 
+    margin: 80px 2px 100px 2px;
+    float: left;
+    @media only screen and (max-width: 700px) {
+        width: 100%;
+    }
+`;
+
 const Tiles = () => {
     return (
-        <TileWrapper>
-            <Tile>
-                <SubTitle href="">Brazilian Jiu Jitsu</SubTitle>
-                <image />
-                <RegularText>Overcome stronger opponents, improve physical fitness & self confidence.</RegularText>
-            </Tile>
-            <Tile>
-                <SubTitle>Muay Thai</SubTitle>
-                <image />
-                <RegularText>Use all joints and limbs as weapons with sophisticated training.</RegularText>
-            </Tile>
-            <Tile>
-                <SubTitle>Mixed Martial Arts</SubTitle>
-                <image />
-                <RegularText>Build yourself into the ultimate weapon with exciting, diverse techniques</RegularText>
-            </Tile>
-        </TileWrapper>
+            <Row>
+                <Cell>
+                    <MainTitle href="">Brazilian Jiu Jitsu</MainTitle>
+                    <Photo src={bjj_showcase}/>
+                    <RegularText>Overcome stronger opponents, improve physical fitness & self confidence.</RegularText>
+                </Cell>
+                <Cell>
+                    <MainTitle>Muay Thai</MainTitle>
+                    <Photo src={thai_boxing_showcase}/>
+                    <RegularText>Use all joints and limbs as weapons with sophisticated training.</RegularText>
+                </Cell>
+                <Cell>
+                    <MainTitle>Mixed Martial Arts</MainTitle>
+                    <Photo src={mma_showcase}/>
+                    <RegularText>Build yourself into the ultimate weapon with exciting, diverse techniques</RegularText>
+                </Cell>
+            </Row>
     )
 }
 
+export const EndQuote = styled.div`
+  display: block; 
+  text-align: center;
+  max-width: 1000px;
+  margin: 10px auto 40px auto;
+`;
+
 const JoinNow = () => {
     return (
-         <ArticleWrapper>
-            <Tile>
-                <Quote>
-                    <RegularText>
-                        <strong>"</strong>
-                        Edson has been a fantastic addition to my 6.5 years old life. Not only
-                        does he teach the kids respect for the sport but reminds them with every
-                        lesson that they need to make lifestyle choices, whether its healthy 
-                        eating, respecting your elders, authority, and peers. This is all 
-                        balanced with fun, fitness and encouragement. I look forward to 
-                        introducing my 2 other boys to Edson’s teachings through BJJ <strong>- Bob Smith</strong>
-                        <strong>"</strong>
-                    </RegularText>
-                </Quote>
-                <MainTitle>Join Now</MainTitle>
-            </Tile>
-        </ArticleWrapper>
+         <EndQuote >
+            <Quote>
+                <RegularText>
+                    {/* <strong>"</strong>
+                    Edson has been a fantastic addition to my 6.5 years old life. Not only
+                    does he teach the kids respect for the sport but reminds them with every
+                    lesson that they need to make lifestyle choices, whether its healthy 
+                    eating, respecting your elders, authority, and peers. This is all 
+                    balanced with fun, fitness and encouragement. I look forward to 
+                    introducing my 2 other boys to Edson’s teachings through BJJ <strong>- Bob Smith</strong>
+                    <strong>"</strong> */}
+                </RegularText>
+            </Quote>
+            <MainTitle><a href={links.freeClasses}>Join Now</a></MainTitle>
+        </EndQuote>
     )
 }
 
 const Home = () => {
     return (
         <main> 
-            <PhotoObject img={photo_mma} em='-1.9em' />
-            <Introduction />
+            {/* <Welcome /> */}
             <PhotoObject img={photo_mma} />
+            <Introduction />
+            <PhotoObject img={adults_class} />
             <QuoteOne />
+            <PhotoObject img={kids_class} />
             <FriendlyEnv />
+            <PhotoObject img={adults_exercise} />
             <History />
+            <PhotoObject img={champion_photo} />
             <StartJourney />
+            <PhotoObject img={thai_boxing} />
             <Tiles />
             <JoinNow />
         </main>

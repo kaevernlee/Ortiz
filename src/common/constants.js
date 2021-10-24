@@ -123,6 +123,7 @@ export const NavWrapper = styled.div`
 export const PhotosWrapper = styled.div`  
   margin-left: -1.87em;
   margin-right: -1.9em;
+  margin-top: -1.9em;
 `;
 
 export const Photo = styled.img`  
@@ -134,7 +135,7 @@ export const ArticleWrapper = styled.div`
   display: block; 
   text-align: center;
   max-width: 1000px;
-  margin: auto;
+  margin: 80px auto 160px auto;
 `;
 
 export const TileWrapper = styled.div`
