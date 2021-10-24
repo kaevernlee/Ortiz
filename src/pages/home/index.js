@@ -2,8 +2,16 @@ import styled from 'styled-components';
 import {MainTitle, RegularText, SubTitle} from "../../common/commonText";
 import * as constants from "../../common/constants"; 
 
+import photo_mma from "../../assets/home-assets/mma-class.jpg"
+import photo_adult from "../../assets/home-assets/bjj-adults-class.jpg"
+import photo_exercises from "../../assets/home-assets/bjj-adults-exercises.jpg"
+import photo_kids from "../../assets/home-assets/bjj-kids.jpg"
+import photo_champion from "../../assets/home-assets/champions-martial-arts.jpg"
+import photo_thai from "../../assets/home-assets/thaiboxing-class.jpg"
+
 
 const PhotosWrapper = constants.PhotosWrapper
+const Photo = constants.Photo
 const ArticleWrapper = constants.ArticleWrapper
 const TileWrapper = constants.TileWrapper
 const Tile = constants.Tile
@@ -18,11 +26,11 @@ const Wrapper = styled.div`
   margin: 20px;
 `;
 
-const Photos = () => {
+const PhotoObject = ({img, em=0}) => {
     return (
-        <PhotosWrapper>
-<img src="https://cdn2.outdoorphotographer.com/2021/05/justin-black-something-completely-different-5.jpg" alt="BJJ, MMA and Muay Thai" draggable="false" />  
-         </PhotosWrapper>
+            <PhotosWrapper>
+                <Photo src={img} margin-top={em}/>
+            </PhotosWrapper>
     )
 }
 
@@ -158,18 +166,16 @@ const JoinNow = () => {
 const Home = () => {
     return (
         <main> 
-            <Card>
-                <Photos />
-                <Introduction />
-                <QuoteOne />
-                <FriendlyEnv />
-                <History />
-                <StartJourney />
-                <Tiles />
-                <JoinNow />
-            </Card>
+            <PhotoObject img={photo_mma} em='-1.9em' />
+            <Introduction />
+            <PhotoObject img={photo_mma} />
+            <QuoteOne />
+            <FriendlyEnv />
+            <History />
+            <StartJourney />
+            <Tiles />
+            <JoinNow />
         </main>
-    
     )
 };
 

@@ -95,9 +95,16 @@ export const NavWrapper = styled.div`
   background-color: #064CA5;
 `;
 
-export const PhotosWrapper = styled.div`
-  display: block; 
+export const PhotosWrapper = styled.div`  
+  margin-left: -1.87em;
+  margin-right: -1.9em;
+  margin-top: ;
 `;
+
+export const Photo = styled.img`  
+  width: 100%;
+`;
+
 
 export const ArticleWrapper = styled.div`
   display: block; 
