@@ -11,6 +11,7 @@ export const SubTitle = styled.h1`
 
 export const RegularText = styled.p`
   font-family: "Open Sans", sans-serif;
+  font-size: 20px;
 `;
 
 export const Link = styled.a`
