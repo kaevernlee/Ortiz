@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/ortiz/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/ortiz/static/js/main.2e7db34e.chunk.js",
+    "main.js.map": "/ortiz/static/js/main.2e7db34e.chunk.js.map",
+    "runtime-main.js": "/ortiz/static/js/runtime-main.e54e908d.js",
+    "runtime-main.js.map": "/ortiz/static/js/runtime-main.e54e908d.js.map",
+    "static/js/2.264d902a.chunk.js": "/ortiz/static/js/2.264d902a.chunk.js",
+    "static/js/2.264d902a.chunk.js.map": "/ortiz/static/js/2.264d902a.chunk.js.map",
+    "static/js/3.5b9fc7ee.chunk.js": "/ortiz/static/js/3.5b9fc7ee.chunk.js",
+    "static/js/3.5b9fc7ee.chunk.js.map": "/ortiz/static/js/3.5b9fc7ee.chunk.js.map",
+    "index.html": "/ortiz/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/ortiz/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.264d902a.chunk.js.LICENSE.txt": "/ortiz/static/js/2.264d902a.chunk.js.LICENSE.txt",
+    "static/media/bjj-adults-class.2dc6f42c.jpg": "/ortiz/static/media/bjj-adults-class.2dc6f42c.jpg",
+    "static/media/bjj-adults-exercises.c5fe1b47.jpg": "/ortiz/static/media/bjj-adults-exercises.c5fe1b47.jpg",
+    "static/media/bjj-kids.22d42b85.jpg": "/ortiz/static/media/bjj-kids.22d42b85.jpg",
+    "static/media/bjj-showcase.1840d481.jpg": "/ortiz/static/media/bjj-showcase.1840d481.jpg",
+    "static/media/champions-martial-arts.e44aff05.jpg": "/ortiz/static/media/champions-martial-arts.e44aff05.jpg",
+    "static/media/hamburger.491ee613.svg": "/ortiz/static/media/hamburger.491ee613.svg",
+    "static/media/instagram.f76a385c.png": "/ortiz/static/media/instagram.f76a385c.png",
+    "static/media/mma-class.7ef82fbd.jpg": "/ortiz/static/media/mma-class.7ef82fbd.jpg",
+    "static/media/mma-showcase.da4efa65.jpg": "/ortiz/static/media/mma-showcase.da4efa65.jpg",
+    "static/media/thai-boxing-showcase.d3f53381.jpg": "/ortiz/static/media/thai-boxing-showcase.d3f53381.jpg",
+    "static/media/thaiboxing-class.6d35df95.jpg": "/ortiz/static/media/thaiboxing-class.6d35df95.jpg",
+    "static/media/timetable.037e53c5.png": "/ortiz/static/media/timetable.037e53c5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e54e908d.js",
+    "static/js/2.264d902a.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.2e7db34e.chunk.js"
+  ]
+}
