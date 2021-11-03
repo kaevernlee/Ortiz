@@ -35,16 +35,16 @@ const TopHeader = () => (
         </HeaderLeftAlignedWrapper>
         <HeaderRightAlignedWrapper>
             <SocialLogoWrapper>
-                <a href="https://www.facebook.com/ortizmartialarts/" target="_blank">
+                <a href="https://www.facebook.com/ortizmartialarts/" rel="noreferrer" target="_blank">
                     <SocialLogo src={facebookImage}/>
                 </a>
-                <a href="https://www.instagram.com/ortiz_academy/" target="_blank">
+                <a href="https://www.instagram.com/ortiz_academy/" rel="noreferrer" target="_blank">
                     <SocialLogo src={instagramImage}/>
                 </a>
-                <a href="https://twitter.com/Ortiz_Academy" target="_blank">
+                <a href="https://twitter.com/Ortiz_Academy" rel="noreferrer" target="_blank">
                     <SocialLogo src={twitterImage}/>
                 </a>
-                <a href="https://www.youtube.com/channel/UC6OzxMmOkpiN7T73Pjf54pg" target="_blank">
+                <a href="https://www.youtube.com/channel/UC6OzxMmOkpiN7T73Pjf54pg" rel="noreferrer" target="_blank">
                     <SocialLogo src={youtubeImage}/>
                 </a>
 
@@ -110,7 +110,7 @@ const HamburgerWrapper = styled.div`
   z-index: 1;
 `;
 
-const MenuItem = styled.a`
+const MenuItem = styled(NavLink)`
   padding: 10px 10px;
   width: 100%;
   text-align: center;
@@ -131,12 +131,12 @@ const MobileNav = () => {
             </HamburgerWrapper>
             {isExpanded &&
             <MenuWrapper>
-                <MenuItem href={links.home}>Home</MenuItem>
-                <MenuItem href={links.faq}>Frequently asked questions</MenuItem>
-                <MenuItem href={links.contact}>Contact</MenuItem>
-                <MenuItem href={links.timeTable}>Time table</MenuItem>
-                <MenuItem href={links.testimonials}>Testimonials</MenuItem>
-                <MenuItem href={links.freeClasses}>Free classes</MenuItem>
+                <MenuItem exact activeClassName="active" to={links.home}>Home</MenuItem>
+                <MenuItem exact activeClassName="active" to={links.faq}>Frequently asked questions</MenuItem>
+                <MenuItem exact activeClassName="active" to={links.contact}>Contact</MenuItem>
+                <MenuItem exact activeClassName="active" to={links.timeTable}>Time table</MenuItem>
+                <MenuItem exact activeClassName="active" to={links.testimonials}>Testimonials</MenuItem>
+                <MenuItem exact activeClassName="active" to={links.freeClasses}>Free classes</MenuItem>
             </MenuWrapper>}
         </MobileNavWrapper>
     );
@@ -167,7 +167,7 @@ const NavBar = () => {
     )
 };
 
-export default () => {
+const HeaderView = () => {
     return (
         <Header>
             <div>
@@ -178,3 +178,5 @@ export default () => {
         </Header>
     )
 };
+
+export default HeaderView;
