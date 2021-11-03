@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/static/js/main.df143af9.chunk.js",
-    "main.js.map": "/static/js/main.df143af9.chunk.js.map",
+    "main.js": "/static/js/main.f687e296.chunk.js",
+    "main.js.map": "/static/js/main.f687e296.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.32f57352.js",
     "runtime-main.js.map": "/static/js/runtime-main.32f57352.js.map",
     "static/js/2.28b92cd9.chunk.js": "/static/js/2.28b92cd9.chunk.js",
@@ -19,6 +19,7 @@
     "static/media/champions-martial-arts.e44aff05.jpg": "/static/media/champions-martial-arts.e44aff05.jpg",
     "static/media/hamburger.491ee613.svg": "/static/media/hamburger.491ee613.svg",
     "static/media/instagram.f76a385c.png": "/static/media/instagram.f76a385c.png",
+    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg",
     "static/media/mma-class.7ef82fbd.jpg": "/static/media/mma-class.7ef82fbd.jpg",
     "static/media/mma-showcase.da4efa65.jpg": "/static/media/mma-showcase.da4efa65.jpg",
     "static/media/thai-boxing-showcase.d3f53381.jpg": "/static/media/thai-boxing-showcase.d3f53381.jpg",
@@ -29,6 +30,6 @@
     "static/js/runtime-main.32f57352.js",
     "static/js/2.28b92cd9.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.df143af9.chunk.js"
+    "static/js/main.f687e296.chunk.js"
   ]
 }
