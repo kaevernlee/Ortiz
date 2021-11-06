@@ -13,7 +13,7 @@ import bjj_showcase from "../../assets/home-assets/bjj-showcase.jpg"
 import thai_boxing_showcase from "../../assets/home-assets/thai-boxing-showcase.jpg"
 import mma_showcase from "../../assets/home-assets/mma-showcase.jpg"
 import links from "../../utils/links";
-
+import {Link} from "react-router-dom";
 
 
 const PhotosWrapper = constants.PhotosWrapper
@@ -186,7 +186,10 @@ const JoinNow = () => {
                     <strong>"</strong> */}
                 </RegularText>
             </Quote>
-            <MainTitle><a href={links.freeClasses}>Join Now</a></MainTitle>
+            <MainTitle>
+                {/* <a href={links.freeClasses}>Join Now</a> */}
+                <Link to={links.freeClasses}>Join Now</Link>
+            </MainTitle>
         </EndQuote>
     )
 }
