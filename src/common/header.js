@@ -49,7 +49,7 @@ const TopHeader = () => (
                 </a>
 
             </SocialLogoWrapper>
-            <MainSlogan>The best place to learn martial arts</MainSlogan>
+            <MainSlogan></MainSlogan>
         </HeaderRightAlignedWrapper>
     </TopHeaderWrapper>
 )

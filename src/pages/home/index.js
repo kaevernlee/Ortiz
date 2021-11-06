@@ -32,14 +32,6 @@ const PhotoObject = ({img}) => {
     )
 }
 
-const Welcome = () => {
-    return (
-        <ArticleWrapper>
-            <MainSlogan></MainSlogan>
-         </ArticleWrapper>
-    )
-}
-
 const Introduction = () => {
     return (
         <ArticleWrapper>
@@ -197,7 +189,6 @@ const JoinNow = () => {
 const Home = () => {
     return (
         <main> 
-            {/* <Welcome /> */}
             <PhotoObject img={photo_mma} />
             <Introduction />
             <PhotoObject img={adults_class} />
