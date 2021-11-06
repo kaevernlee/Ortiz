@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import {MainTitle, RegularText} from "../../common/commonText";
 import * as constants from "../../common/constants";
 import links from "../../utils/links";
+import {Link} from "react-router-dom";
+
 
 const TileWrapper = constants.TileWrapper
 const Testimonial = styled.div`
@@ -60,6 +62,7 @@ const MattGillard = () => {
     )
 }
 
+
 // TODO: Need to refactor this copied and pasted
 export const EndQuote = styled.div`
   display: block; 
@@ -71,7 +74,10 @@ export const EndQuote = styled.div`
 const JoinNow = () => {
     return (
          <EndQuote >
-            <MainTitle><a href={links.freeClasses}>Join Now</a></MainTitle>
+            <MainTitle>
+                {/* <a href={links.freeClasses}>Join Now</a> */}
+                <Link to={links.freeClasses}>Join Now</Link>
+            </MainTitle>
         </EndQuote>
     )
 }
