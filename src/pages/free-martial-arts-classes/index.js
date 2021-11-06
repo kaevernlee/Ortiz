@@ -28,8 +28,8 @@ const FreeMartialArtsPage = () => {
                 </Section>
                 <Section>
                     <SubTitle>Tips</SubTitle>
-                    <RegularText>Check the <a href={links.timeTable}>Time Table</a> and decide on the class you wish to attend.</RegularText>
-                    <RegularText>Check the <a href={links.contact}>Map for the location</a> of our school. See Parking Info below.</RegularText>
+                    <RegularText>Check the <Link to={links.timeTable}>Time Table</Link> and decide on the class you wish to attend.</RegularText>
+                    <RegularText>Check the <Link to={links.contact}>Map for the location</Link> of our school. See Parking Info below.</RegularText>
                     <RegularText>Arrive at the academy at least 20 minutes prior to the class you are attending.</RegularText>
                     <RegularText>Fill up the short application form provided at the entrance.</RegularText>
                     <RegularText>Introduce yourself to the instructor and join the class.</RegularText>
