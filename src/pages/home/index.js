@@ -35,7 +35,7 @@ const PhotoObject = ({img}) => {
 const Welcome = () => {
     return (
         <ArticleWrapper>
-            <MainSlogan>The Best Place To Learn Martial Arts</MainSlogan>
+            <MainSlogan></MainSlogan>
          </ArticleWrapper>
     )
 }
