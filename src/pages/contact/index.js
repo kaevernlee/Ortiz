@@ -2,6 +2,7 @@ import * as constants from "../../common/constants";
 import {MainTitle, RegularText, SubTitle} from "../../common/commonText";
 import styled from "styled-components";
 import links from "../../utils/links";
+import {Link} from "react-router-dom";
 
 
 const Page = constants.Card
@@ -37,10 +38,14 @@ export const EndQuote = styled.div`
 const JoinNow = () => {
     return (
          <EndQuote >
-            <MainTitle><a href={links.freeClasses}>Join Now</a></MainTitle>
+            <MainTitle>
+                {/* <a href={links.freeClasses}>Join Now</a> */}
+                <Link to={links.freeClasses}>Join Now</Link>
+            </MainTitle>
         </EndQuote>
     )
 }
+
 
 
 const Main = () => {

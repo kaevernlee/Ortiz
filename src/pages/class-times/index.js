@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import * as constants from "../../common/constants"; 
 import timetable from "../../assets/class-assets/timetable.png"
 import links from "../../utils/links";
+import {Link} from "react-router-dom";
 
 
 const Timetable = constants.Timetable
@@ -19,7 +20,6 @@ const TimeTable = () => {
 
     );
 }
-
 // TODO: Need to refactor this copied and pasted
 export const EndQuote = styled.div`
   display: block; 
@@ -31,10 +31,14 @@ export const EndQuote = styled.div`
 const JoinNow = () => {
     return (
          <EndQuote >
-            <MainTitle><a href={links.freeClasses}>Join Now</a></MainTitle>
+            <MainTitle>
+                {/* <a href={links.freeClasses}>Join Now</a> */}
+                <Link to={links.freeClasses}>Join Now</Link>
+            </MainTitle>
         </EndQuote>
     )
 }
+
 
 const ClassTimes = () => {
     return (
