@@ -73,7 +73,7 @@ const FriendlyEnv = () => {
             <RegularText>
                 If you are looking to improve your confidence, strength and fitness – as well as your general 
                 wellbeing – Ortiz Martial Arts Academy is the best place to learn martial arts in the Northern Beaches 
-                region. From Jiu Jitsu and Muay Thai to Mixed Martial Arts (MMA) and self-defence classes, there are options 
+                region. From Jiu Jitsu, Mixed Martial Arts (MMA) and self-defence classes, there are options 
                 to suit participants of all ages and levels of experience.
             </RegularText>
          </ArticleWrapper>
@@ -83,7 +83,7 @@ const FriendlyEnv = () => {
 const History = () => {
     return (
         <ArticleWrapper>
-            <MainTitle>The History of MMA, Brazilian Jiu Jitsu and Muay Thai</MainTitle>
+            <MainTitle>The History of MMA and Brazilian Jiu Jitsu</MainTitle>
             <RegularText>
                 Martial arts techniques may date back to ancient times, but 
                 they are still just as relevant in the modern world. The training 
@@ -92,8 +92,7 @@ const History = () => {
                 fitness and mental ability.
             </RegularText>
             <RegularText>
-                While Muay Thai dates back to the Siamese warriors of ancient times, Brazilian 
-                Jiu Jitsu (BJJ) and MMA are relatively new combat sports that harness techniques 
+                Brazilian Jiu Jitsu (BJJ) and MMA are relatively new combat sports that harness techniques 
                 from a range of other martial arts. For example, BJJ draws on Judo and Japanese 
                 Jujutsu, while MMA incorporates moves from BJJ, Muay Thai, Judo and even wrestling.
             </RegularText>
@@ -119,8 +118,10 @@ const StartJourney = () => {
 
 
 const Row = styled.div`
-    width: 100%;
+    /* width: 100%;
     float: left;
+    text-align: center; */
+    display: flex;
     text-align: center;
     @media only screen and (max-width: 700px) {
         display: flex;
@@ -129,9 +130,10 @@ const Row = styled.div`
 `;
 
 const Cell = styled.div`
-    width: 33%; 
+    width: 50%; 
     margin: 80px 2px 100px 2px;
     float: left;
+    padding: 20px;
     @media only screen and (max-width: 700px) {
         width: 100%;
     }
@@ -145,11 +147,12 @@ const Tiles = () => {
                     <Photo src={bjj_showcase}/>
                     <RegularText>Overcome stronger opponents, improve physical fitness & self confidence.</RegularText>
                 </Cell>
-                <Cell>
+                {/* TODO: Need to update this section to self defence */}
+                {/* <Cell>
                     <MainTitle>Muay Thai</MainTitle>
                     <Photo src={thai_boxing_showcase}/>
                     <RegularText>Use all joints and limbs as weapons with sophisticated training.</RegularText>
-                </Cell>
+                </Cell> */}
                 <Cell>
                     <MainTitle>Mixed Martial Arts</MainTitle>
                     <Photo src={mma_showcase}/>
@@ -159,6 +162,8 @@ const Tiles = () => {
     )
 }
 
+
+// TODO: Need to refactor this copied and pasted
 export const EndQuote = styled.div`
   display: block; 
   text-align: center;

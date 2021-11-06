@@ -27,7 +27,7 @@ const HaveBegClasses = () => {
     return (
         <FAQ 
             question="Do you have beginner's classes?" 
-            answer="Yes, we have fundamental classes covering the basics of BJJ. The Thai Boxing and MMA classes are open to all and students will be grouped based on their skill level."
+            answer="Yes, we have fundamental classes covering the basics of BJJ. The Self Defence and MMA classes are open to all and students will be grouped based on their skill level."
             pid='1'
         />
     )
@@ -205,6 +205,22 @@ const Right = styled.div`
   }
 `;
 
+// TODO: Need to refactor this copied and pasted
+export const EndQuote = styled.div`
+  display: block; 
+  text-align: center;
+  max-width: 1000px;
+  margin: 10px auto 40px auto;
+`;
+
+const JoinNow = () => {
+    return (
+         <EndQuote >
+            <MainTitle><a href={links.freeClasses}>Join Now</a></MainTitle>
+        </EndQuote>
+    )
+}
+
 const FAQPage = () => {
     return (
         <div>
@@ -244,6 +260,7 @@ const FAQPage = () => {
                 <Left> <AgeRestrictions /></Left>
                 <Right><Rank /></Right>
             </Row>
+            <JoinNow />
         </div>
     )
 };

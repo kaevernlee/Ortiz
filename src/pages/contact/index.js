@@ -1,5 +1,8 @@
 import * as constants from "../../common/constants";
 import {MainTitle, RegularText, SubTitle} from "../../common/commonText";
+import styled from "styled-components";
+import links from "../../utils/links";
+
 
 const Page = constants.Card
 
@@ -24,17 +27,28 @@ const Contact = () => {
     )
 }
 
-const Join = () => {
+// TODO: Need to refactor this copied and pasted
+export const EndQuote = styled.div`
+  display: block; 
+  text-align: center;
+  max-width: 1000px;
+  margin: 10px auto 40px auto;
+`;
+
+const JoinNow = () => {
     return (
-        <MainTitle>Join Today</MainTitle>
+         <EndQuote >
+            <MainTitle><a href={links.freeClasses}>Join Now</a></MainTitle>
+        </EndQuote>
     )
 }
+
 
 const Main = () => {
     return (
         <div>
             <Contact />
-            <Join />
+            <JoinNow />
         </div>
     )
 }

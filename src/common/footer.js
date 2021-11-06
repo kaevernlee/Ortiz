@@ -56,13 +56,12 @@ const Footer = () => {
                 <FooterGroup>
                     <TextGroup>
                         <Title>ADDRESS</Title>
-                        <Subtext>F/79 Bassett Street</Subtext>
-                        <Subtext>Mona Vale NSW Australia 2103</Subtext>
+                        <Subtext>50/5 Ponderosa Parade</Subtext>
+                        <Subtext>Warriewood NSW 2102</Subtext>
                     </TextGroup>
                     <TextGroup>
                         <Title>CONTACT US</Title>
-                        <Subtext>Phone: 02 9979 7846</Subtext>
-                        <Subtext>Mobile: 04 1070 7002</Subtext>
+                        <Subtext>Mobile: 0410 707 002</Subtext>
                         <Subtext>Email: edson.ortiz@me.com</Subtext>
                     </TextGroup>
                 </FooterGroup>

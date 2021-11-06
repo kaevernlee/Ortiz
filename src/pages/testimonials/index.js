@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {MainTitle, RegularText} from "../../common/commonText";
 import * as constants from "../../common/constants";
+import links from "../../utils/links";
 
 const TileWrapper = constants.TileWrapper
 const Testimonial = styled.div`
@@ -59,6 +60,22 @@ const MattGillard = () => {
     )
 }
 
+// TODO: Need to refactor this copied and pasted
+export const EndQuote = styled.div`
+  display: block; 
+  text-align: center;
+  max-width: 1000px;
+  margin: 10px auto 40px auto;
+`;
+
+const JoinNow = () => {
+    return (
+         <EndQuote >
+            <MainTitle><a href={links.freeClasses}>Join Now</a></MainTitle>
+        </EndQuote>
+    )
+}
+
 const Testimonials = () => {
     return (
     <div>
@@ -67,6 +84,7 @@ const Testimonials = () => {
         <CoryWyllieGray />
         <AntheaGilmore />
         <MattGillard />
+        <JoinNow />
     </div>
     )
 }

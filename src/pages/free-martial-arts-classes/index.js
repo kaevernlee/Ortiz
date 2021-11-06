@@ -24,12 +24,12 @@ const FreeMartialArtsPage = () => {
                     <RegularText>3. Check out the facilities provided</RegularText>
                     <RegularText>4. Experience the classes first hand</RegularText>
                     <RegularText>5. Get started on some basic techniques</RegularText>
-                    <RegularText>6. Try out BJJ, MMA and Thai Boxing</RegularText>
+                    <RegularText>6. Try out BJJ, MMA and Self Defence</RegularText>
                 </Section>
                 <Section>
                     <SubTitle>Tips</SubTitle>
-                    <RegularText>Check the <Link href={links.timeTable}>Time Table</Link> and decide on the class you wish to attend.</RegularText>
-                    <RegularText>Check the <Link href={links.contact}>Map for the location</Link> of our school. See Parking Info below.</RegularText>
+                    <RegularText>Check the <a href={links.timeTable}>Time Table</a> and decide on the class you wish to attend.</RegularText>
+                    <RegularText>Check the <a href={links.contact}>Map for the location</a> of our school. See Parking Info below.</RegularText>
                     <RegularText>Arrive at the academy at least 20 minutes prior to the class you are attending.</RegularText>
                     <RegularText>Fill up the short application form provided at the entrance.</RegularText>
                     <RegularText>Introduce yourself to the instructor and join the class.</RegularText>
@@ -45,7 +45,7 @@ const FreeMartialArtsPage = () => {
                     <SubTitle>Attire</SubTitle>
                     <RegularText>Do NOT wear anything with extra pockets, belt or zippers.</RegularText>
                     <RegularText>For Brazilian Jiu-Jitsu (BJJ) and MMA wear loose fitting clothing (T-shirt and shorts / track pants)</RegularText>
-                    <RegularText>For Muay Thai or Kickboxing wear T-shirt and shorts and if you have boxing gloves you could bring them along</RegularText>
+                    <RegularText>For MMA wear T-shirt and shorts and if you have boxing gloves you could bring them along</RegularText>
                 </Section>
                 <Section>
                     <SubTitle>Footwear</SubTitle>
@@ -75,7 +75,7 @@ const FreeMartialArtsPage = () => {
                     <SubTitle>After the Free Trial Classes</SubTitle>
                     <RegularText>If you wish to join the school Please take note of the following:</RegularText>
                     <RegularText>For BJJ please wear a (GI or Uniform).</RegularText>
-                    <RegularText>For Thai Boxing please equip yourself with: 16oz Gloves, Mouth Guard, Hand Wraps, Chin Pads.</RegularText>
+                    <RegularText>For MMA please equip yourself with: 16oz Gloves, Mouth Guard, Hand Wraps, Chin Pads.</RegularText>
                 </Section>
                 <Section>
                     <SubTitle>Parking</SubTitle>
