@@ -20,7 +20,6 @@ const Contact = () => {
             <RegularText>Warriewood NSW 2102</RegularText>
 
             <SubTitle>Contact Us</SubTitle>
-            <RegularText>Phone: <a href="tel: 02 9979 7846">02 9979 7846</a></RegularText>
             <RegularText>Mobile: <a href="tel: 0410 707 002">0410 707 002</a></RegularText>
             <RegularText>Email: <a href="mailto:edson.ortiz@me.com">edson.ortiz@me.com</a></RegularText>
         </Page>
