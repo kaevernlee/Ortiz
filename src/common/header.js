@@ -30,7 +30,7 @@ const TopHeader = () => (
             </a>
             <HeaderText>
                 <HeaderTitle>Ortiz Martial Arts Academy</HeaderTitle>
-                <HeaderSubTitle>MONA VALE • NSW • AUSTRALIA</HeaderSubTitle>
+                <HeaderSubTitle>WARRIEWOOD • NSW • AUSTRALIA</HeaderSubTitle>
             </HeaderText>
         </HeaderLeftAlignedWrapper>
         <HeaderRightAlignedWrapper>
