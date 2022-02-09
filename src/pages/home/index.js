@@ -43,9 +43,8 @@ const Introduction = () => {
                 respect, ensuring our students understand the responsibility that goes with learning these ancient arts.
             </RegularText>
             <RegularText>
-                Located in Mona Vale, we offer martial arts classes for kids and adults – including Jiu Jitsu and MMA – to 
-                those located on the Northern Beaches, from Newport to Warriewood and everywhere in between. For more 
-                information regarding our classes, don’t hesitate to get in touch today on (02) 9979 7846.
+                Located in Warriewood, we offer martial arts classes for kids and adults – including Jiu Jitsu and MMA – to 
+                those located on the Northern Beaches. For more information regarding our classes, don’t hesitate to get in touch today on 0410 707 002.
             </RegularText>
          </ArticleWrapper>
     )
